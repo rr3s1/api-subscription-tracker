@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="00565d00-95f3-47d3-a368-9b81b9660484" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/subscription.routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/user.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/mongodb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.development.local" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development.local" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
-=======
-    <list default="true" id="00565d00-95f3-47d3-a368-9b81b9660484" name="Changes" comment="" />
->>>>>>> f01d8bf (007   SF)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,11 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760871804305</updated>
-<<<<<<< HEAD
-      <workItem from="1760871805003" duration="7860000" />
-=======
-      <workItem from="1760871805003" duration="9505000" />
->>>>>>> f01d8bf (007   SF)
+      <workItem from="1760871805003" duration="8967000" />
     </task>
     <servers />
   </component>
