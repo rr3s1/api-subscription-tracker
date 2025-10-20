@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="00565d00-95f3-47d3-a368-9b81b9660484" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/auth-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth-controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1760871804305</updated>
       <workItem from="1760871805003" duration="8967000" />
-      <workItem from="1760944365326" duration="3031000" />
+      <workItem from="1760944365326" duration="3945000" />
     </task>
     <servers />
   </component>

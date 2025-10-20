@@ -68,8 +68,51 @@ export const signUp = async (req, res, next) => {
     }
 };
 
-// Placeholder for the sign-in controller function.
-export const signIn = async (req, res, next) => { };
+// --- SIGN IN CONTROLLER ---
+export const signIn = async (req, res, next) => {
+    try {
+        // Extract email and password from the request body.
+        const { email, password } = req.body;
+
+        // --- USER VALIDATION ---
+        // Find the user by email.
+        const user = await User.findOne({ email });
+
+        if (!user) {
+            const error = new Error('User not found');
+            error.statusCode = 404; // Not Found.
+            throw error;
+        }
+
+        // --- PASSWORD VALIDATION ---
+        // Compare the provided password with the stored hashed password.
+        const isPasswordValid = await bcrypt.compare(password, user.password);
+
+        if (!isPasswordValid) {
+            const error = new Error('Invalid password');
+            error.statusCode = 401; // Unauthorized.
+            throw error;
+        }
+
+        // --- JWT GENERATION ---
+        // If credentials are valid, generate a new token.
+        const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: JWT_EXPIRES_IN });
+
+        // --- SUCCESS RESPONSE ---
+        // Send a 200 OK response with the token and user data.
+        res.status(200).json({
+            success: true,
+            message: 'User signed in successfully',
+            data: {
+                token,
+                user,
+            }
+        });
+    } catch (error) {
+        // Pass any errors to the global error handler.
+        next(error);
+    }
+};
 
 // Placeholder for the sign-out controller function.
 export const signOut = async (req, res, next) => { };
