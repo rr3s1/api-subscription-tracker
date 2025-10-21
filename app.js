@@ -1,32 +1,39 @@
+// Import core framework and application modules.
 import express from 'express';
-
 import userRouter from './routes/user.routes.js';
 import authRouter from './routes/auth.routes.js';
 import subscriptionRouter from './routes/subscription.routes.js';
-import errorMiddleware from './middlewares/error.middleware.js'
+import errorMiddleware from './middlewares/error.middleware.js';
+import cookieParser from "cookie-parser";
+// Import the custom Arcjet middleware for global security.
+import arcjetMiddleware from "./middlewares/arcjet.middleware.js";
+// Import configuration and database connection logic.
 import { PORT } from './config/env.js';
 import connectToDatabase from "./database/mongodb.js";
-import cookieParser from "cookie-parser";
 
 const app = express();
+
+// --- CORE AND SECURITY MIDDLEWARE ---
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+// Apply the Arcjet middleware globally to protect all endpoints.
+app.use(arcjetMiddleware);
 
-
+// --- ROUTE REGISTRATION ---
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/subscriptions', subscriptionRouter);
 
+// --- GLOBAL ERROR HANDLING ---
 app.use(errorMiddleware);
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the subscription tracker API');
+    res.send('Welcome to the subscription tracker API');
 });
 
 app.listen(PORT, async () => {
     console.log(`Subscription Tracker API is running on http://localhost:${PORT}`);
-
     await connectToDatabase();
 });
 
