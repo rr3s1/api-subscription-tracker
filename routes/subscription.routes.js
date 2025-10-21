@@ -1,30 +1,28 @@
-// Import the Router, authorization middleware, and subscription controller.
+// Import necessary modules for routing and controllers.
 import { Router } from 'express';
 import authorize from "../middlewares/auth.middleware.js";
-import { createSubscription } from "../controllers/subscription.controller.js";
+import { createSubscription, getUserSubscriptions } from "../controllers/subscription.controller.js";
 
-// Create a new router instance for subscription-related endpoints.
+// Create a new router instance for subscriptions.
 const subscriptionRouter = Router();
 
 // --- SUBSCRIPTION ROUTES ---
-
-// Placeholder route for getting all subscriptions.
+// Placeholders for other subscription-related endpoints.
 subscriptionRouter.get('/', (req, res) => res.send({ title: 'GET all subscriptions' }));
-
-// Placeholder route for getting a single subscription by ID.
 subscriptionRouter.get('/:id', (req, res) => res.send({ title: 'GET subscription details' }));
 
-// --- PROTECTED ROUTE FOR CREATION ---
-// The 'authorize' middleware is used here to ensure only authenticated users can create subscriptions.
-// It runs before the 'createSubscription' controller.
+// --- PROTECTED ROUTES ---
+// Secure the subscription creation route.
 subscriptionRouter.post('/', authorize, createSubscription);
 
-// Placeholder routes for other CRUD and custom operations.
+// Secure the route for fetching user-specific subscriptions.
+subscriptionRouter.get('/user/:id', authorize, getUserSubscriptions);
+
+// Placeholder routes for other operations.
 subscriptionRouter.put('/:id', (req, res) => res.send({ title: 'UPDATE subscription' }));
 subscriptionRouter.delete('/:id', (req, res) => res.send({ title: 'DELETE subscription' }));
-subscriptionRouter.get('/user/:id', (req, res) => res.send({ title: 'GET ALL user subscriptions' }));
 subscriptionRouter.put('/:id/cancel', (req, res) => res.send({ title: 'CANCEL subscription' }));
 subscriptionRouter.get('/upcoming-renewals', (req, res) => res.send({ title: 'GET upcoming renewals' }));
 
-// Export the configured subscription router.
+// Export the configured router.
 export default subscriptionRouter;
