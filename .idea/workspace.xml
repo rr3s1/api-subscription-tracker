@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00565d00-95f3-47d3-a368-9b81b9660484" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/auth.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.routes.js" afterDir="false" />
     </list>
@@ -43,6 +43,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "inlay.hints",
+    "ts.external.directory.path": "C:\\Users\\fvm9\\AppData\\Local\\Programs\\WebStorm 2025.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,7 +73,7 @@
       <updated>1760871804305</updated>
       <workItem from="1760871805003" duration="8967000" />
       <workItem from="1760944365326" duration="6717000" />
-      <workItem from="1761047728437" duration="820000" />
+      <workItem from="1761047728437" duration="2299000" />
     </task>
     <servers />
   </component>
