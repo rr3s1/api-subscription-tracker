@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00565d00-95f3-47d3-a368-9b81b9660484" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/nodemailer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/email-template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/send-email.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.production.local" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/subscription.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/subscription.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/workflow.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/workflow.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="00565d00-95f3-47d3-a368-9b81b9660484" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +76,7 @@
       <workItem from="1760944365326" duration="6717000" />
       <workItem from="1761047728437" duration="8446000" />
       <workItem from="1761115690314" duration="10717000" />
-      <workItem from="1761129741873" duration="3389000" />
+      <workItem from="1761129741873" duration="3647000" />
     </task>
     <servers />
   </component>
