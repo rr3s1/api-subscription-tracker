@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00565d00-95f3-47d3-a368-9b81b9660484" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/upstash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/workflow.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/workflow.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/nodemailer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/email-template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/send-email.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.production.local" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production.local" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/subscription.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/subscription.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/workflow.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/workflow.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -32,29 +32,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.example.com.executor": "Debug",
-    "JavaScript Debug.localhost:5500.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "C:\\000   APPS\\000   Subscription Tracker API\\subscription-tracker-api-craft\\node_modules\\eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "ts.external.directory.path": "C:\\Users\\fvm9\\AppData\\Local\\Programs\\WebStorm 2025.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.example.com.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.localhost:5500.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\000   APPS\\000   Subscription Tracker API\\subscription-tracker-api-craft\\node_modules\\eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\fvm9\\AppData\\Local\\Programs\\WebStorm 2025.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JavaScript Debug.example.com">
     <configuration name="example.com" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://127.0.0.1:8080/v2/publish/https://example.com">
       <method v="2" />
@@ -86,7 +86,8 @@
       <workItem from="1760871805003" duration="8967000" />
       <workItem from="1760944365326" duration="6717000" />
       <workItem from="1761047728437" duration="8446000" />
-      <workItem from="1761115690314" duration="5031000" />
+      <workItem from="1761115690314" duration="10717000" />
+      <workItem from="1761129741873" duration="3389000" />
     </task>
     <servers />
   </component>
